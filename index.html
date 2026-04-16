@@ -566,6 +566,27 @@ const marGrupos=[['Platos Fuertes',39244500],['Comida Urbana y Noche',15461600],
 const marProds=[['Family Burguer',203,7287700],['Parrillada Mar y Tierra',34,4042600],['Bife de Paleta',70,3843000],['Arroz Putiao del Pacífico',69,3443100],['Bife de Punta de Anca',53,3439700],['Bife Chorizo',51,3309900],['Perla del Caribe',70,3213000],['Mega Family',68,2985200],['Roulade de Pollo y Tocineta',66,2633400],['Posta Cartagenera',56,2458400],['Sodificada Maracuyá',176,2446400],['Churrasco de Pollo',61,2372900],['Costilla de Res Braseada',48,2347200],['Panceta Acevichada Tropical',53,2326700],['Chicken Tenders',97,2318300]];
 const marHoras=[[11,20700],[12,952500],[13,2925000],[14,12943000],[15,9989300],[16,9264300],[17,8921200],[18,3514300],[19,6785000],[20,10497600],[21,11309300],[22,12763300],[23,2504800]];
 
+// ── DATOS ABRIL 2026 (fuente: DIAN — VN+IMP+PROP-DESC=RECIBIDO ✓) — días 1-14 parcial ──
+const abrDias = [
+  {f:'01/04/2026',d:'Miércoles',fact:29,bruto:3064915, iva:225585, prop:129600,desc:0,    tot:3420100, ef:1054850, dat:1958100, qr:407150},
+  {f:'02/04/2026',d:'Jueves',   fact:32,bruto:6686409, iva:492391, prop:111700,desc:61700,tot:7228800, ef:998900, dat:5658200, qr:571700},
+  {f:'03/04/2026',d:'Viernes',  fact:47,bruto:8157513, iva:606087, prop:0,     desc:15700,tot:8747900, ef:2287500, dat:6282100, qr:178300},
+  {f:'04/04/2026',d:'Sábado',   fact:38,bruto:5891842, iva:440658, prop:177000,desc:0,    tot:6509500, ef:1167767, dat:4057867, qr:1283867},
+  {f:'05/04/2026',d:'Domingo',  fact:27,bruto:4391755, iva:332258, prop:340100,desc:82600,tot:4981513, ef:1494000, dat:2963313, qr:524200},
+  {f:'06/04/2026',d:'Lunes',    fact:8, bruto:1213348, iva:89452, prop:281000,desc:0,    tot:1583800, ef:621300, dat:962500, qr:0},
+  {f:'07/04/2026',d:'Martes',   fact:10,bruto:1169752, iva:87148, prop:0,     desc:0,    tot:1256900, ef:353600, dat:591900, qr:311400},
+  {f:'08/04/2026',d:'Miércoles',fact:7, bruto:700519, iva:52281, prop:0,     desc:0,    tot:752800, ef:153600, dat:512500, qr:86700},
+  {f:'09/04/2026',d:'Jueves',   fact:20,bruto:2970030, iva:231370, prop:0,     desc:51900,tot:3149500, ef:297100, dat:1705900, qr:986300},
+  {f:'10/04/2026',d:'Viernes',  fact:27,bruto:3182471, iva:238829, prop:20000, desc:0,    tot:3441300, ef:1123200, dat:1144650, qr:1173450},
+  {f:'11/04/2026',d:'Sábado',   fact:49,bruto:6382438, iva:487162, prop:1044700,desc:8300, tot:7906000, ef:2264050, dat:2696200, qr:2737550},
+  {f:'12/04/2026',d:'Domingo',  fact:55,bruto:8376353, iva:631747, prop:116300,desc:0,    tot:9124400, ef:1823800, dat:6225400, qr:1061300},
+  {f:'13/04/2026',d:'Lunes',    fact:11,bruto:1026997, iva:80303, prop:234000,desc:0,    tot:1341300, ef:398300, dat:676800, qr:266200},
+  {f:'14/04/2026',d:'Martes',   fact:20,bruto:1977282, iva:150918, prop:26000, desc:4500, tot:2149700, ef:243450, dat:1498150, qr:246600},
+];
+const abrGrupos=[['Platos Fuertes',27400400],['Comida Urbana y Noche',8040300],['Bebidas',6513700],['Sodificadas',3197000],['Entradas',2329400],['Cervezas',2190600],['Postres',1895600],['Compartir y Fusión',1426800],['Menú Infantil',1218900],['Cócteles',730000],['Sorbetes',516000],['Porciones',264000]];
+const abrProds=[['Bife de Paleta',96,5270400],['Family Burguer',93,3338700],['Bife de Punta de Anca',48,3115200],['Perla del Caribe',57,2616300],['Arroz Putiao del Pacífico',51,2544900],['Salmón Marinero',35,2026500],['Mega Family',36,1580400],['Limonada Natural',200,1580000],['Alitas Coreanas',44,1491600],['Churrasco de Pollo',38,1478200],['Parrillada Mar y Tierra',12,1426800],['Sodificada Maracuyá',94,1306600],['Encocado Pollo Cremoso',32,1276800],['Burrito Fish de Camarones',32,1276800],['Roulade de Pollo y Tocineta',31,1236900]];
+const abrHoras=[[12,447600],[13,1675300],[14,6523000],[15,7534700],[16,6324700],[17,6321100],[18,4193300],[19,1926000],[20,4210900],[21,7333600],[22,7505000],[23,1978500]];
+
 // ── BUILD STORE ──
 let STORE = { meses: [
   {ano:2025,mes:11,label:'Nov 2025',dias:novDias,grupos:novGrupos,productos:novProds,horas:novHoras},
@@ -573,6 +594,7 @@ let STORE = { meses: [
   {ano:2026,mes:1, label:'Ene 2026',dias:eneDias,grupos:eneGrupos,productos:eneProds,horas:eneHoras},
   {ano:2026,mes:2, label:'Feb 2026',dias:febDias,grupos:febGrupos,productos:febProds,horas:febHoras},
   {ano:2026,mes:3, label:'Mar 2026',dias:marDias,grupos:marGrupos,productos:marProds,horas:marHoras},
+  {ano:2026,mes:4, label:'Abr 2026 (1-14)',dias:abrDias,grupos:abrGrupos,productos:abrProds,horas:abrHoras},
 ]};
 
 // ── SELECTED COMPARE MONTHS ──
