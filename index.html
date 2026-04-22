@@ -213,7 +213,7 @@ textarea.json-input:focus{border-color:var(--green2)}
           <span class="chart-title">Ventas por día</span>
           <div class="chart-legend">
             <span class="legend-item"><span class="legend-dot" style="background:#0a7c52"></span>Venta neta</span>
-            <span class="legend-item"><span class="legend-dot" style="background:#8b5cf6"></span>Impoconsumo</span>
+            <span class="legend-item"><span class="legend-dot" style="background:#8b5cf6"></span>Impoconsumo 8%</span>
             <span class="legend-item"><span class="legend-dot" style="background:#f59e0b"></span>Propina</span>
           </div>
         </div>
@@ -566,26 +566,28 @@ const marGrupos=[['Platos Fuertes',39244500],['Comida Urbana y Noche',15461600],
 const marProds=[['Family Burguer',203,7287700],['Parrillada Mar y Tierra',34,4042600],['Bife de Paleta',70,3843000],['Arroz Putiao del Pacífico',69,3443100],['Bife de Punta de Anca',53,3439700],['Bife Chorizo',51,3309900],['Perla del Caribe',70,3213000],['Mega Family',68,2985200],['Roulade de Pollo y Tocineta',66,2633400],['Posta Cartagenera',56,2458400],['Sodificada Maracuyá',176,2446400],['Churrasco de Pollo',61,2372900],['Costilla de Res Braseada',48,2347200],['Panceta Acevichada Tropical',53,2326700],['Chicken Tenders',97,2318300]];
 const marHoras=[[11,20700],[12,952500],[13,2925000],[14,12943000],[15,9989300],[16,9264300],[17,8921200],[18,3514300],[19,6785000],[20,10497600],[21,11309300],[22,12763300],[23,2504800]];
 
-// ── DATOS ABRIL 2026 (fuente: DIAN — VN+IMP+PROP-DESC=RECIBIDO ✓) — días 1-14 parcial ──
-const abrDias = [
-  {f:'01/04/2026',d:'Miércoles',fact:29,bruto:3064915, iva:225585, prop:129600,desc:0,    tot:3420100, ef:1054850, dat:1958100, qr:407150},
-  {f:'02/04/2026',d:'Jueves',   fact:32,bruto:6686409, iva:492391, prop:111700,desc:61700,tot:7228800, ef:998900, dat:5658200, qr:571700},
-  {f:'03/04/2026',d:'Viernes',  fact:47,bruto:8157513, iva:606087, prop:0,     desc:15700,tot:8747900, ef:2287500, dat:6282100, qr:178300},
-  {f:'04/04/2026',d:'Sábado',   fact:38,bruto:5891842, iva:440658, prop:177000,desc:0,    tot:6509500, ef:1167767, dat:4057867, qr:1283867},
-  {f:'05/04/2026',d:'Domingo',  fact:27,bruto:4391755, iva:332258, prop:340100,desc:82600,tot:4981513, ef:1494000, dat:2963313, qr:524200},
-  {f:'06/04/2026',d:'Lunes',    fact:8, bruto:1213348, iva:89452, prop:281000,desc:0,    tot:1583800, ef:621300, dat:962500, qr:0},
-  {f:'07/04/2026',d:'Martes',   fact:10,bruto:1169752, iva:87148, prop:0,     desc:0,    tot:1256900, ef:353600, dat:591900, qr:311400},
-  {f:'08/04/2026',d:'Miércoles',fact:7, bruto:700519, iva:52281, prop:0,     desc:0,    tot:752800, ef:153600, dat:512500, qr:86700},
-  {f:'09/04/2026',d:'Jueves',   fact:20,bruto:2970030, iva:231370, prop:0,     desc:51900,tot:3149500, ef:297100, dat:1705900, qr:986300},
-  {f:'10/04/2026',d:'Viernes',  fact:27,bruto:3182471, iva:238829, prop:20000, desc:0,    tot:3441300, ef:1123200, dat:1144650, qr:1173450},
-  {f:'11/04/2026',d:'Sábado',   fact:49,bruto:6382438, iva:487162, prop:1044700,desc:8300, tot:7906000, ef:2264050, dat:2696200, qr:2737550},
-  {f:'12/04/2026',d:'Domingo',  fact:55,bruto:8376353, iva:631747, prop:116300,desc:0,    tot:9124400, ef:1823800, dat:6225400, qr:1061300},
-  {f:'13/04/2026',d:'Lunes',    fact:11,bruto:1026997, iva:80303, prop:234000,desc:0,    tot:1341300, ef:398300, dat:676800, qr:266200},
-  {f:'14/04/2026',d:'Martes',   fact:20,bruto:1977282, iva:150918, prop:26000, desc:4500, tot:2149700, ef:243450, dat:1498150, qr:246600},
+// ── DATOS ABRIL 2026 (fuente: DIAN — VN+IMP+PROP-DESC=RECIBIDO ✓) ──
+const aprDias=[
+  {f:'01/04/2026',d:'Miércoles',fact:29,bruto:2819815, iva:225585, prop:245100,desc:0,     tot:3290500, ef:923850,  dat:1791550,  qr:330000},
+  {f:'02/04/2026',d:'Jueves',   fact:32,bruto:6154907, iva:492393, prop:593200,desc:61700,  tot:7178800, ef:885750,  dat:5232850,  qr:528700},
+  {f:'03/04/2026',d:'Viernes',  fact:47,bruto:7576111, iva:606089, prop:597100,desc:15700,  tot:8763600, ef:2185800, dat:5830900,  qr:165500},
+  {f:'04/04/2026',d:'Sábado',   fact:38,bruto:5508241, iva:440659, prop:383600,desc:0,      tot:6332500, ef:1063333, dat:3706433,  qr:1179133},
+  {f:'05/04/2026',d:'Domingo',  fact:27,bruto:4153241, iva:332259, prop:321113,desc:82600,  tot:4724013, ef:1300300, dat:2699800,  qr:485400},
+  {f:'06/04/2026',d:'Lunes',    fact:8, bruto:1118148, iva:89452,  prop:95200, desc:0,      tot:1302800, ef:446500,  dat:761100,   qr:0},
+  {f:'07/04/2026',d:'Martes',   fact:10,bruto:1089352, iva:87148,  prop:80400, desc:0,      tot:1256900, ef:324400,  dat:562200,   qr:289900},
+  {f:'08/04/2026',d:'Miércoles',fact:7, bruto:653519,  iva:52281,  prop:47000, desc:0,      tot:752800,  ef:140600,  dat:482800,   qr:82400},
+  {f:'09/04/2026',d:'Jueves',   fact:20,bruto:2892130, iva:231370, prop:129800,desc:51900,  tot:3201400, ef:432800,  dat:1710100,  qr:980600},
+  {f:'10/04/2026',d:'Viernes',  fact:27,bruto:2985370, iva:238830, prop:197100,desc:0,      tot:3421300, ef:1056200, dat:1039000,  qr:1129000},
+  {f:'11/04/2026',d:'Sábado',   fact:49,bruto:6089537, iva:487163, prop:301200,desc:8300,   tot:6869600, ef:1886500, dat:2475600,  qr:2214600},
+  {f:'12/04/2026',d:'Domingo',  fact:55,bruto:7896852, iva:631748, prop:479500,desc:0,      tot:9008100, ef:1690800, dat:5789900,  qr:1047900},
+  {f:'13/04/2026',d:'Lunes',    fact:11,bruto:1003796, iva:80304,  prop:23200, desc:0,      tot:1107300, ef:277600,  dat:559800,   qr:246700},
+  {f:'14/04/2026',d:'Martes',   fact:20,bruto:1886481, iva:150919, prop:95300, desc:4500,   tot:2128200, ef:380850,  dat:1413750,  qr:242800},
+  {f:'15/04/2026',d:'Miércoles',fact:21,bruto:2094074, iva:167526, prop:137900,desc:0,      tot:2399500, ef:474700,  dat:1355700,  qr:431200},
 ];
-const abrGrupos=[['Platos Fuertes',27400400],['Comida Urbana y Noche',8040300],['Bebidas',6513700],['Sodificadas',3197000],['Entradas',2329400],['Cervezas',2190600],['Postres',1895600],['Compartir y Fusión',1426800],['Menú Infantil',1218900],['Cócteles',730000],['Sorbetes',516000],['Porciones',264000]];
-const abrProds=[['Bife de Paleta',96,5270400],['Family Burguer',93,3338700],['Bife de Punta de Anca',48,3115200],['Perla del Caribe',57,2616300],['Arroz Putiao del Pacífico',51,2544900],['Salmón Marinero',35,2026500],['Mega Family',36,1580400],['Limonada Natural',200,1580000],['Alitas Coreanas',44,1491600],['Churrasco de Pollo',38,1478200],['Parrillada Mar y Tierra',12,1426800],['Sodificada Maracuyá',94,1306600],['Encocado Pollo Cremoso',32,1276800],['Burrito Fish de Camarones',32,1276800],['Roulade de Pollo y Tocineta',31,1236900]];
-const abrHoras=[[12,447600],[13,1675300],[14,6523000],[15,7534700],[16,6324700],[17,6321100],[18,4193300],[19,1926000],[20,4210900],[21,7333600],[22,7505000],[23,1978500]];
+
+const aprGrupos=[['Platos Fuertes',28599000],['Comida Urbana y Noche',8318500],['Bebidas',6777800],['Sodificadas',3336000],['Entradas',2520700],['Cervezas',2229300],['Postres',2002400],['Compartir y Fusión',1426800],['Menú Infantil',1218900],['Cócteles',730000],['Sorbetes',528900]];
+const aprProds=[['Bife de Paleta',98,5380200],['Family Burguer',96,3446400],['Bife de Punta de Anca',51,3309900],['Arroz Putiao del Pacífico',55,2744500],['Perla del Caribe',58,2662200],['Salmón Marinero',36,2084400],['Limonada Natural',208,1643200],['Mega Family',37,1624300],['Churrasco de Pollo',41,1594900],['Alitas Coreanas',46,1559400],['Parrillada Mar y Tierra',12,1426800],['Sodificada Maracuyá',100,1390000],['Encocado Pollo Cremoso',33,1316700],['Burrito Fish de Camarones',32,1276800],['Roulade de Pollo y Tocineta',31,1236900]];
+const aprHoras=[[12,447600],[13,1905400],[14,7038200],[15,7811800],[16,6562100],[17,6348700],[18,4302900],[19,1926000],[20,4527800],[21,7873400],[22,7512900],[23,1978500]];
 
 // ── BUILD STORE ──
 let STORE = { meses: [
@@ -594,7 +596,7 @@ let STORE = { meses: [
   {ano:2026,mes:1, label:'Ene 2026',dias:eneDias,grupos:eneGrupos,productos:eneProds,horas:eneHoras},
   {ano:2026,mes:2, label:'Feb 2026',dias:febDias,grupos:febGrupos,productos:febProds,horas:febHoras},
   {ano:2026,mes:3, label:'Mar 2026',dias:marDias,grupos:marGrupos,productos:marProds,horas:marHoras},
-  {ano:2026,mes:4, label:'Abr 2026 (1-14)',dias:abrDias,grupos:abrGrupos,productos:abrProds,horas:abrHoras},
+  {ano:2026,mes:4, label:'Abr 2026',dias:aprDias,grupos:aprGrupos,productos:aprProds,horas:aprHoras},
 ]};
 
 // ── SELECTED COMPARE MONTHS ──
@@ -703,9 +705,9 @@ function renderKPIs(dias, container){
       <div class="kpi-sub">Base gravable impoconsumo</div>
     </div>
     <div class="kpi-card">
-      <div class="kpi-label">Impoconsumo</div>
+      <div class="kpi-label">Impoconsumo 8%</div>
       <div class="kpi-val">${fmtM(iva)}</div>
-      <div class="kpi-sub">${bruto?(iva/bruto*100).toFixed(2):0}% de venta neta</div>
+      <div class="kpi-sub">8% sobre base gravable</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Propina</div>
@@ -738,7 +740,7 @@ function renderGraficas(){
     type:'bar',
     data:{labels,datasets:[
       {label:'Propina',data:dias.map(d=>d.prop),backgroundColor:'#f59e0b',stack:'s'},
-      {label:'Impoconsumo',data:dias.map(d=>d.iva),backgroundColor:'#8b5cf6',stack:'s'},
+      {label:'Impoconsumo 8%',data:dias.map(d=>d.iva),backgroundColor:'#8b5cf6',stack:'s'},
       {label:'Venta neta',data:dias.map(d=>d.bruto),backgroundColor:'#0a7c52',stack:'s'},
     ]},
     options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
